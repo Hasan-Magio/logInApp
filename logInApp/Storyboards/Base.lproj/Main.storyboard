@@ -90,13 +90,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITH-uC-GTP">
-                                <rect key="frame" x="127" y="233" width="66" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCz-zm-3OU">
                                 <rect key="frame" x="120" y="318" width="82" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -105,12 +98,23 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="Zgy-9n-wRm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🫡Hi, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITH-uC-GTP">
+                                <rect key="frame" x="91" y="231" width="138.5" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2ah-fq-txi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2ah-fq-txi" firstAttribute="trailing" secondItem="WCz-zm-3OU" secondAttribute="trailing" constant="118" id="3Sp-O0-dqE"/>
+                            <constraint firstItem="ITH-uC-GTP" firstAttribute="centerX" secondItem="2ah-fq-txi" secondAttribute="centerX" id="6IJ-BC-coR"/>
+                            <constraint firstItem="ITH-uC-GTP" firstAttribute="top" secondItem="2ah-fq-txi" secondAttribute="top" constant="187" id="6VQ-UL-VAH"/>
+                            <constraint firstItem="2ah-fq-txi" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ITH-uC-GTP" secondAttribute="trailing" constant="80" id="MmO-bV-jqM"/>
+                            <constraint firstItem="WCz-zm-3OU" firstAttribute="top" secondItem="ITH-uC-GTP" secondAttribute="bottom" constant="52" id="ScG-i2-SsK"/>
                             <constraint firstItem="WCz-zm-3OU" firstAttribute="leading" secondItem="2ah-fq-txi" secondAttribute="leading" constant="120" id="l6T-C3-eDc"/>
+                            <constraint firstItem="ITH-uC-GTP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2ah-fq-txi" secondAttribute="leading" constant="80" id="lHD-Sl-9jJ"/>
                             <constraint firstItem="2ah-fq-txi" firstAttribute="bottom" secondItem="WCz-zm-3OU" secondAttribute="bottom" constant="166" id="qmH-cX-HoP"/>
                         </constraints>
                     </view>
@@ -119,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lxD-Um-fo0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1504" y="925"/>
+            <point key="canvasLocation" x="1503.75" y="924.29577464788736"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TV4-wu-I6x">
